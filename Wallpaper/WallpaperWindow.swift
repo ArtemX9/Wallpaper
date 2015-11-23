@@ -13,14 +13,18 @@ class WallpaperWindow: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
+        
         window!.level = Int(CGWindowLevelForKey(.DesktopWindowLevelKey))
-        window!.collectionBehavior = [.CanJoinAllSpaces, .Stationary, .IgnoresCycle]
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        window!.collectionBehavior = [.CanJoinAllSpaces, .Stationary, .IgnoresCycle, .FullScreenPrimary]
+        window!.styleMask = NSBorderlessWindowMask
+        window!.setFrame(screenResolution(), display: true)
+
     }
+    
     override init(window: NSWindow?) {
         super.init(window: window)
         window!.level = Int(CGWindowLevelForKey(.DesktopWindowLevelKey))
-        window!.collectionBehavior = [.CanJoinAllSpaces, .Stationary, .IgnoresCycle]
+        window!.collectionBehavior = [.CanJoinAllSpaces, .Stationary, .IgnoresCycle, .FullScreenPrimary]
         
     }
 
@@ -28,4 +32,7 @@ class WallpaperWindow: NSWindowController {
         super.init(coder: coder)
     }
     
+    func screenResolution() -> NSRect {
+        return NSScreen.screens()![0].frame
+    }
 }
