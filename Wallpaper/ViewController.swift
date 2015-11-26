@@ -17,19 +17,17 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "updateTime", userInfo: nil, repeats: true)
 
-//        timer
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
     }
     
     func updateTime() {
-        num--
-        timeTextField.integerValue = num
+        
+//        let 
+        
+        let after66Years = NSDate(timeIntervalSinceNow: 60 * 60 * 24 * 365 * 66)
+        
+        timeTextField.stringValue = String(after66Years.timeIntervalSinceNow)
+        
+//        let lastDate = 
     }
 
     @IBOutlet weak var timeTextField: NSTextField!

@@ -674,9 +674,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-32-qYJ">
-                                <rect key="frame" x="191" y="99" width="99" height="71"/>
+                                <rect key="frame" x="88" y="99" width="305" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="95" id="eGq-I7-2Kz"/>
+                                    <constraint firstAttribute="width" constant="301" id="eGq-I7-2Kz"/>
                                     <constraint firstAttribute="height" constant="71" id="xDp-dD-F57"/>
                                 </constraints>
                                 <animations/>
