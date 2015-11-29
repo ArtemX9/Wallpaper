@@ -11,26 +11,20 @@ import Cocoa
 class ViewController: NSViewController {
     
     var timer: NSTimer!
-    var num = 80
+    var lastDate = moment(["year": 1991, "second": 00, "month": 09, "minute": 00, "hour": 03, "day": 09]);
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+        lastDate = lastDate!.add(80, .Years)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTime", userInfo: nil, repeats: true)
 
     }
     
     func updateTime() {
-        
-//        let 
-        
-        let after66Years = NSDate(timeIntervalSinceNow: 60 * 60 * 24 * 365 * 66)
-        
-        timeTextField.stringValue = String(after66Years.timeIntervalSinceNow)
-        
-//        let lastDate = 
+        let difference = lastDate! - moment();
+        timeTextField.stringValue = difference.description
     }
 
     @IBOutlet weak var timeTextField: NSTextField!
-
 }
 

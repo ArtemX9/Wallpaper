@@ -15,6 +15,11 @@
 		AC9FD76B1C0244740068B417 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9FD76A1C0244740068B417 /* Quartz.framework */; };
 		AC9FD76E1C0244A30068B417 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9FD76C1C0244A30068B417 /* CoreFoundation.framework */; };
 		AC9FD76F1C0244A30068B417 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9FD76D1C0244A30068B417 /* CoreGraphics.framework */; };
+		ACAAB3FA1C0AD52D0013EF09 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAAB3F51C0AD52D0013EF09 /* Duration.swift */; };
+		ACAAB3FB1C0AD52D0013EF09 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAAB3F61C0AD52D0013EF09 /* Extensions.swift */; };
+		ACAAB3FC1C0AD52D0013EF09 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAAB3F71C0AD52D0013EF09 /* Moment.swift */; };
+		ACAAB3FD1C0AD52D0013EF09 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAAB3F81C0AD52D0013EF09 /* Operators.swift */; };
+		ACAAB3FE1C0AD52D0013EF09 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAAB3F91C0AD52D0013EF09 /* TimeUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		AC9FD76A1C0244740068B417 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		AC9FD76C1C0244A30068B417 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AC9FD76D1C0244A30068B417 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACAAB3F51C0AD52D0013EF09 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		ACAAB3F61C0AD52D0013EF09 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACAAB3F71C0AD52D0013EF09 /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		ACAAB3F81C0AD52D0013EF09 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		ACAAB3F91C0AD52D0013EF09 /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 		AC9FD7581C0242320068B417 /* Wallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				ACAAB3F51C0AD52D0013EF09 /* Duration.swift */,
+				ACAAB3F61C0AD52D0013EF09 /* Extensions.swift */,
+				ACAAB3F71C0AD52D0013EF09 /* Moment.swift */,
+				ACAAB3F81C0AD52D0013EF09 /* Operators.swift */,
+				ACAAB3F91C0AD52D0013EF09 /* TimeUnit.swift */,
 				AC9FD7591C0242320068B417 /* AppDelegate.swift */,
 				AC9FD75B1C0242320068B417 /* ViewController.swift */,
 				AC9FD7681C0242900068B417 /* WallpaperWindow.swift */,
@@ -146,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAAB3FE1C0AD52D0013EF09 /* TimeUnit.swift in Sources */,
+				ACAAB3FB1C0AD52D0013EF09 /* Extensions.swift in Sources */,
 				AC9FD75C1C0242320068B417 /* ViewController.swift in Sources */,
+				ACAAB3FD1C0AD52D0013EF09 /* Operators.swift in Sources */,
 				AC9FD7691C0242900068B417 /* WallpaperWindow.swift in Sources */,
 				AC9FD75A1C0242320068B417 /* AppDelegate.swift in Sources */,
+				ACAAB3FA1C0AD52D0013EF09 /* Duration.swift in Sources */,
+				ACAAB3FC1C0AD52D0013EF09 /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,7 @@
 				AC9FD7671C0242320068B417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
